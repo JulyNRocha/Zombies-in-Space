@@ -1713,6 +1713,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   m_PrefabInstance: {fileID: 750297537}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1546560778 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 750297537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1772559446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2292,6 +2297,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5496192284217787366, guid: a7294d69cbc12fe408591f0d2d99c836, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1546560778}
     - target: {fileID: 6132666773586531803, guid: a7294d69cbc12fe408591f0d2d99c836, type: 3}
       propertyPath: m_Name
       value: Enemy
