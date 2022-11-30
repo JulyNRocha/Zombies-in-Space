@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] Transform target;
+    [SerializeField] float damage = 40f;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AttackHitEvent()
     {
-        
+        if (target == null) return;
+        Debug.Log("chomp chomp~");
     }
+
 }
