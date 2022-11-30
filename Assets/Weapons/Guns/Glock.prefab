@@ -289,6 +289,7 @@ MonoBehaviour:
   range: 100
   damage: 30
   muzzleVFX: {fileID: 5645713694158840346}
+  hitEffect: {fileID: 100010, guid: 645413a00f7bd0242bbd6d0e5eb6f439, type: 3}
 --- !u!1 &3832703582600972130
 GameObject:
   m_ObjectHideFlags: 0
