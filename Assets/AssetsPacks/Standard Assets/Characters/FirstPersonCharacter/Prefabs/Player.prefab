@@ -291,8 +291,8 @@ MonoBehaviour:
       m_RotationOrder: 4
     CurrentTargetSpeed: 8
   mouseLook:
-    XSensitivity: 2
-    YSensitivity: 2
+    XSensitivity: 3
+    YSensitivity: 3
     clampVerticalRotation: 1
     MinimumX: -45
     MaximumX: 90
@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26cb76575a6b5604abcbd4ce7b1aab62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 0}
 --- !u!1 &3071071595516365096
 GameObject:
   m_ObjectHideFlags: 0
