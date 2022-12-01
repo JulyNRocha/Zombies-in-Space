@@ -236,7 +236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
-  chaseRange: 10
+  chaseRange: 20
+  turnSpeed: 5
 --- !u!114 &8514048968435147164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,5 +283,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ebf03ebed26f441994d2626080d1b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   damage: 40
