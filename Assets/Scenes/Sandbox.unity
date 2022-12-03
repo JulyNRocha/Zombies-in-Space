@@ -2231,7 +2231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1690510262081148079, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2173101669013137552, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: range
@@ -2245,6 +2245,10 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 821622494}
+    - target: {fileID: 3105258254434447463, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6168605773788759569, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: range
       value: 10
