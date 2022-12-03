@@ -11,18 +11,46 @@ public class Weapon : MonoBehaviour
     [SerializeField] ParticleSystem muzzleVFX;
     [SerializeField] GameObject hitEffect;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] float fireRate = 0.5f;
+    [SerializeField] bool isRifle;
+
+    bool canShoot = true;
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if(isRifle)
+        {
+            if (Input.GetMouseButtonDown(0)) 
+            {
+                InvokeRepeating("ShootRifle", .001f, fireRate);
+            }
+            else if (Input.GetMouseButtonUp(0)) 
+            {
+                CancelInvoke("ShootRifle");
+            }
+        }
+        if (Input.GetMouseButtonDown(0) && canShoot)
         {
            
-            Shoot();
+            StartCoroutine(Shoot());
             
         }   
     }
 
-    void Shoot()
+    IEnumerator Shoot()
+    {
+        canShoot = false;
+        if(ammoSlot.GetCurrentAmmo() > 0)
+        {
+            PlayMuzzleFlash();
+            ProcessRaycast();
+            ammoSlot.ReduceCurrentAmmo();
+        }
+        yield return new WaitForSeconds(fireRate);
+        canShoot = true;
+    }
+
+    void ShootRifle()
     {
         if(ammoSlot.GetCurrentAmmo() > 0)
         {
