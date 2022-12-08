@@ -27,7 +27,6 @@ public class EnemyAI : MonoBehaviour
         if(health.IsDead)
         {
             this.enabled = false;
-            navMeshAgent.enabled = false;
         }
 
         distanceToTarget = Vector3.Distance(target.transform.position, this.transform.position);
