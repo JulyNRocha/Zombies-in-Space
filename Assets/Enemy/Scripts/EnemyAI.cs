@@ -27,6 +27,7 @@ public class EnemyAI : MonoBehaviour
         if(health.IsDead)
         {
             this.enabled = false;
+            this.GetComponent<CapsuleCollider>().isTrigger = true;
         }
 
         distanceToTarget = Vector3.Distance(target.transform.position, this.transform.position);
