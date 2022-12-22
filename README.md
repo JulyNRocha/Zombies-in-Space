@@ -1,5 +1,4 @@
 # Zombies in Space
-###### tags: `Game Desing` `Games` `GitHub`
 
 ## Description
 You see yourself trapped in a space base full of zombies, some weapons, and a flash light, can you survive to the control room?
