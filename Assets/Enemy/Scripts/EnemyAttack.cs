@@ -16,6 +16,7 @@ public class EnemyAttack : MonoBehaviour
     {
         if (target == null) return;
         target.TakeDamage(damagePerHit);
+        target.GetComponent<DisplayDamage>().ShoeDamageImpact();
     }
 
 }
